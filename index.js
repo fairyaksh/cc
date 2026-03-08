@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { input, select, confirm } from "@inquirer/prompts";
 import { typeChoices, emojis } from "./utils.js";
 

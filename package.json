@@ -1,11 +1,14 @@
 {
-  "name": "gcc",
+  "name": "git-commit-cli",
   "version": "1.0.0",
-  "description": "gcc",
+  "description": "git commit cli for conventional commits",
   "license": "ISC",
   "author": "",
   "type": "module",
   "main": "index.js",
+  "bin": {
+    "cc": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
