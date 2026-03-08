@@ -1,0 +1,15 @@
+{
+  "name": "gcc",
+  "version": "1.0.0",
+  "description": "gcc",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.3.0"
+  }
+}
