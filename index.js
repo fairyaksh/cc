@@ -1,6 +1,8 @@
 import { input, select, confirm } from "@inquirer/prompts";
 import { typeChoices, emojis } from "./utils.js";
 
+import { execSync } from "child_process";
+
 const mainQuestions = {
   type: await select({
     message: "What type of commit are you making?",
@@ -29,4 +31,6 @@ const transformOutput = (res) => {
       );
 };
 
-console.log(transformOutput(mainQuestions));
+execSync(`git commit -m "${transformOutput(mainQuestions)}"`, {
+  stdio: "inherit",
+});
